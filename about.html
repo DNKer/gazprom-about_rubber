@@ -76,40 +76,49 @@
             <li class="about__main-item">
               <a class="about-card about-card--large" href="#">
                 <h2 class="about-card__title">Раскрытие информации</h2>
-                <picture>
-                  <source media="(max-width: 1023px)" srcset="images/folder-mobile.png 1x, 
+                <div class="about-card__wrapper">
+                  <picture>
+                    <source media="(max-width: 1023px)" srcset="images/folder-mobile.png 1x, 
                     images/folder-mobile@2x.png 2x">
-                  <img class="about-card__image-large" src="images/folder-desktop.png"
-                    srcset="images/folder-desktop@2x.png 2x" width="140" height="140" alt="Folder image">
-                </picture>
-                <picture>
-                  <source media="(max-width: 1023px)" srcset="images/mark-mobile.png 1x, 
+                    <img class="about-card__image-large" src="images/folder-desktop.png"
+                      srcset="images/folder-desktop@2x.png 2x" width="140" height="140" alt="Folder image">
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 1023px)" srcset="images/mark-mobile.png 1x, 
                     images/mark-mobile@2x.png 2x">
-                  <img class="about-card__image-small" src="images/mark-desktop.png"
-                    srcset="images/mark-desktop@2x.png 2x" width="80" height="80" alt="Mark">
-                </picture>
+                    <img class="about-card__image-small" src="images/mark-desktop.png"
+                      srcset="images/mark-desktop@2x.png 2x" width="80" height="80" alt="Mark">
+                  </picture>
+                </div>
+                <button class="about-card__detailed-btn btn" type="button" aria-label="Подробнее">
+                  <svg class="about-card__detailed-icon" width="48" height="48" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </button>
               </a>
-              <!-- <button class="about-card__detailed-btn btn" type="button">
-                <svg class="about-card__detailed-icon" width="48" height="48" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
-                </svg>
-              </button> остановилс здесь-->
             </li>
             <li class="about__main-item">
               <a class="about-card about-card--large" href="#">
                 <h2 class="about-card__title">Реквизиты, лицензии и&nbsp;контакты</h2>
-                <picture>
-                  <source media="(max-width: 1023px)" srcset="images/docs-mobile.png 1x, 
+                <div class="about-card__wrapper">
+                  <picture>
+                    <source media="(max-width: 1023px)" srcset="images/docs-mobile.png 1x, 
                     images/docs-mobile@2x.png 2x">
-                  <img class="about-card__image-large" src="images/docs-desktop.png"
-                    srcset="images/docs-desktop@2x.png 2x" width="140" height="140" alt="Documents image">
-                </picture>
-                <picture>
-                  <source media="(max-width: 1023px)" srcset="images/folder-small-mobile.png 1x, 
+                    <img class="about-card__image-large" src="images/docs-desktop.png"
+                      srcset="images/docs-desktop@2x.png 2x" width="140" height="140" alt="Documents image">
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 1023px)" srcset="images/folder-small-mobile.png 1x, 
                     images/folder-small-mobile@2x.png 2x">
-                  <img class="about-card__image-small" src="images/folder-small-desktop.png"
-                    srcset="images/folder-small-desktop@2x.png 2x" width="80" height="80" alt="Folder-xs">
-                </picture>
+                    <img class="about-card__image-small" src="images/folder-small-desktop.png"
+                      srcset="images/folder-small-desktop@2x.png 2x" width="80" height="80" alt="Folder-xs">
+                  </picture>
+                </div>
+                <button class="about-card__detailed-btn btn" type="button" aria-label="Подробнее">
+                  <svg class="about-card__detailed-icon" width="48" height="48" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </button>
               </a>
             </li>
           </ul>
@@ -120,6 +129,7 @@
                   <use xlink:href="images/sprite.svg#icon-bank"></use>
                 </svg>
                 <h2 class="about-card__title">О банке</h2>
+                <span class="about-card__description">Основные сведения о&nbsp;банке</span>
               </a>
             </li>
             <li class="about__item">
@@ -128,6 +138,7 @@
                   <use xlink:href="images/sprite.svg#icon-control"></use>
                 </svg>
                 <h2 class="about-card__title">Комплаенс-контроль</h2>
+                <span class="about-card__description">Система комплаенс-контроля затрагивает все уровни банка</span>
               </a>
             </li>
             <li class="about__item">
@@ -136,6 +147,8 @@
                   <use xlink:href="images/sprite.svg#icon-hand"></use>
                 </svg>
                 <h2 class="about-card__title">Противодействие коррупции</h2>
+                <span class="about-card__description">Обращение руководства, основные принципы,
+                  документы, горячая линия</span>
               </a>
             </li>
             <li class="about__item">
@@ -144,6 +157,8 @@
                   <use xlink:href="images/sprite.svg#icon-flower"></use>
                 </svg>
                 <h2 class="about-card__title">Устойчивое развитие</h2>
+                <span class="about-card__description">Соответствие принципам экологической,
+                  социальной и&nbsp;управленческой ответственности</span>
               </a>
             </li>
             <li class="about__item">
@@ -152,6 +167,8 @@
                   <use xlink:href="images/sprite.svg#icon-globe"></use>
                 </svg>
                 <h2 class="about-card__title">Зарубежные представительства</h2>
+                <span class="about-card__description">Основная информация о&nbsp;международной
+                  деятельности банка</span>
               </a>
             </li>
             <li class="about__item">
@@ -160,6 +177,7 @@
                   <use xlink:href="images/sprite.svg#icon-worker"></use>
                 </svg>
                 <h2 class="about-card__title">Карьера в Газпромбанке</h2>
+                <span class="about-card__description"></span>
               </a>
             </li>
           </ul>
