@@ -47,6 +47,12 @@
     }
   }
 
+  &:focus,
+  &:hover {
+    border-radius: 16px;
+    background-color: $color-solitude-5;
+  }
+
   &--large {
     padding: 20px;
     min-height: 200px;
@@ -176,5 +182,9 @@
       height: 20px;
     }
 
+    &:focus,
+    &:hover {
+      background-color: $color-link-water;
+    }
   }
 }

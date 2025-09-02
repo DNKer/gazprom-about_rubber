@@ -60,6 +60,7 @@
     &:focus-visible,
     &:hover {
       color: $color-royal-blue-2;
+      border-bottom: 1px $border-style-solid-1 $color-royal-blue-1;
     }
 
     @include vp-1024 {

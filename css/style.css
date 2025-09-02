@@ -1012,6 +1012,10 @@ button:focus {
     padding: 34px;
   }
 }
+.about-card:focus, .about-card:hover {
+  border-radius: 16px;
+  background-color: #EDEFF4;
+}
 .about-card--large {
   padding: 20px;
   min-height: 200px;
@@ -1140,6 +1144,9 @@ button:focus {
     height: 20px;
   }
 }
+.about-card__detailed-icon:focus, .about-card__detailed-icon:hover {
+  background-color: #D2D4DA;
+}
 
 .rating-card {
   width: 100%;
@@ -1201,6 +1208,7 @@ button:focus {
 }
 .rating-card__value:focus-visible, .rating-card__value:hover {
   color: #2F54DF;
+  border-bottom: 1px solid #476BF0;
 }
 @media (min-width: 1024px) {
   .rating-card__value {
@@ -1443,11 +1451,6 @@ button:focus {
   display: grid;
   gap: 24px;
 }
-.about__main-list :focus,
-.about__main-list :hover {
-  border-radius: 16px;
-  background-color: #EDEFF4;
-}
 @media (min-width: 1024px) {
   .about__main-list {
     gap: 20px;
@@ -1483,10 +1486,6 @@ button:focus {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
-}
-.about__item :focus,
-.about__item :hover {
-  background-color: #EAECF4;
 }
 
 .rating {
