@@ -173,6 +173,11 @@
       height: 48px;
       border-radius: 8px;
     }
+
+    &:focus,
+    &:hover {
+      background-color: $color-link-water;
+    }
   }
 
   &__detailed-icon {
@@ -180,11 +185,6 @@
     @include vp-1024 {
       width: 20px;
       height: 20px;
-    }
-
-    &:focus,
-    &:hover {
-      background-color: $color-link-water;
     }
   }
 }

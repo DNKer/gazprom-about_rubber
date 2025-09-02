@@ -1138,14 +1138,14 @@ button:focus {
     border-radius: 8px;
   }
 }
+.about-card__detailed-btn:focus, .about-card__detailed-btn:hover {
+  background-color: #D2D4DA;
+}
 @media (min-width: 1024px) {
   .about-card__detailed-icon {
     width: 20px;
     height: 20px;
   }
-}
-.about-card__detailed-icon:focus, .about-card__detailed-icon:hover {
-  background-color: #D2D4DA;
 }
 
 .rating-card {
