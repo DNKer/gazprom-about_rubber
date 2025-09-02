@@ -8,6 +8,18 @@
   background-color: $color-white;
   box-shadow: 0 6px 20px 0 $color-gulf-blue-2;
 
+  @media screen and (max-width:1023px) {
+    .about-card__description {
+      display: none;
+    }
+  }
+
+  @include vp-1024 {
+    .about-card__description {
+      display: block;
+    }
+  }
+
   @include vp-1024 {
     min-height: 240px;
     padding: 32px;
@@ -26,6 +38,12 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 24px;
+    }
+
+    @include vp-1304 {
+      min-width: 392px;
+      min-height: 300px;
+      padding: 34px;
     }
   }
 
@@ -109,6 +127,11 @@
       top: 100px;
       right: 20px;
     }
+
+    @include vp-1304 {
+      top: 192px;
+      right: 20px;
+    }
   }
 
   &__image-large {
@@ -126,6 +149,11 @@
       height: 240px;
       top: 80px;
       right: 150px;
+    }
+
+    @include vp-1304 {
+      top: 92px;
+      right: 60px;
     }
   }
 

@@ -30,5 +30,11 @@
       margin: 0 0 100px 0;
       gap: 20px;
     }
+
+    @include vp-1304 {
+      margin: 0 0 120px 0;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
   }
 }

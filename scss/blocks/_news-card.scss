@@ -15,6 +15,11 @@
     padding: 32px;
   }
 
+  @include vp-1304 {
+    min-width: 392px;
+    min-height: 244px;
+  }
+
   &__date {
     margin: 0 0 12px 0;
     font-size: 14px;

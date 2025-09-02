@@ -1,5 +1,5 @@
 .rating {
-  margin: 0 0 60px 0;
+  margin: 0 0 62px 0;
 
   @include vp-768 {
     margin: 0 0 80px 0;
@@ -7,6 +7,10 @@
 
   @include vp-1024 {
     margin: 0 0 102px 0;
+  }
+
+  @include vp-1304 {
+    margin: 0 0 120px 0;
   }
 
   &__title {
@@ -26,6 +30,10 @@
       text-align: center;
       letter-spacing: -0.64px;
     }
+
+    @include vp-1304 {
+      margin: 0 0 58px 0;
+    }
   }
 
   &__list {
@@ -38,11 +46,20 @@
     @include vp-768 {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    @include vp-1304 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
   }
 
   &__item--large {
     @include vp-768 {
       grid-column: 1 / 3;
+    }
+
+    @include vp-1304 {
+      grid-column: 3 / 3;
     }
   }
 }
