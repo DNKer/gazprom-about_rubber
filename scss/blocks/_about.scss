@@ -66,6 +66,10 @@
     }
   }
 
+  &__main-item {
+    position: relative;
+  }
+
   &__list {
     list-style: none;
     padding: 0;
@@ -85,6 +89,31 @@
     @include vp-1304 {
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
+    }
+  }
+
+  &__detailed-btn {
+    display: none;
+
+    .about__detailed-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    @include vp-1024 {
+      display: flex;
+      padding: 0;
+      position: absolute;
+      bottom: 32px;
+      left: 32px;
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $color-link-water;
     }
   }
 }

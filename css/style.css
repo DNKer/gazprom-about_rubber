@@ -1126,27 +1126,6 @@ button:focus {
     right: 60px;
   }
 }
-.about-card__detailed-btn {
-  display: none;
-}
-@media (min-width: 1024px) {
-  .about-card__detailed-btn {
-    display: block;
-    padding: 14px;
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
-  }
-}
-.about-card__detailed-btn:focus, .about-card__detailed-btn:hover {
-  background-color: #D2D4DA;
-}
-@media (min-width: 1024px) {
-  .about-card__detailed-icon {
-    width: 20px;
-    height: 20px;
-  }
-}
 
 .rating-card {
   width: 100%;
@@ -1463,6 +1442,9 @@ button:focus {
     gap: 24px;
   }
 }
+.about__main-item {
+  position: relative;
+}
 .about__list {
   list-style: none;
   padding: 0;
@@ -1486,6 +1468,28 @@ button:focus {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
+}
+.about__detailed-btn {
+  display: none;
+}
+.about__detailed-btn .about__detailed-icon {
+  width: 20px;
+  height: 20px;
+}
+@media (min-width: 1024px) {
+  .about__detailed-btn {
+    display: flex;
+    padding: 0;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+  }
+}
+.about__detailed-btn:focus, .about__detailed-btn:hover {
+  background-color: #D2D4DA;
 }
 
 .rating {

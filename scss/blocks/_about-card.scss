@@ -162,29 +162,4 @@
       right: 60px;
     }
   }
-
-  &__detailed-btn {
-    display: none;
-
-    @include vp-1024 {
-      display: block;
-      padding: 14px;
-      width: 48px;
-      height: 48px;
-      border-radius: 8px;
-    }
-
-    &:focus,
-    &:hover {
-      background-color: $color-link-water;
-    }
-  }
-
-  &__detailed-icon {
-
-    @include vp-1024 {
-      width: 20px;
-      height: 20px;
-    }
-  }
 }
